@@ -3,7 +3,7 @@ import *as fs from 'fs'
 export default function handler(req, res) {
 
 //readfile function
-  fs.readFile(`blogdata/${req.query.slug}.json`, 'utf-8', (err, data) => {
+  fs.readdir(`blogdata`, (err, data) => {
 
     //error checking
     if (err) {
@@ -11,7 +11,7 @@ export default function handler(req, res) {
       console.log(err);
     }
     else {
-      res.status(200).json(JSON.parse(data))
+      res.status(200).json(data)
     }
 
   })
