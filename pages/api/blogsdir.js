@@ -10,8 +10,9 @@ let allBlogs = [];
    const element = data[index];
    myfile = await fs.promises.readFile(("blogdata/"+element),'utf-8');
   //  console.log(myfile); //for debugging
-   allBlogs.push(JSON.parse(myfile))
-  }
+  allBlogs.push(JSON.parse(myfile))
+}
+console.log("Hi...")
   res.status(200).json(allBlogs)
 
 //  (err, data) => {
