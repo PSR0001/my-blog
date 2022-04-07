@@ -3,19 +3,19 @@ import styles from '../styles/Blog.module.css'
 import Link from 'next/link'
 // import { useEffect } from 'react/cjs/react.development'
 // import { useState } from 'react/cjs/react.production.min'
-const Blog = () => {
+const Blog = (props) => {
 
-    const [Blogs, setBlogs] = useState([])
-    useEffect(() => {
-        //console.log("useeffect is running...")
-        fetch('api/blogsdir').then((a) => {
-            return a.json()
-        })
-            .then((parsed) => {
-                // console.log(parsed)
-                setBlogs(parsed)
-            })
-    },[])
+    const [Blogs, setBlogs] = useState(props.data)
+    // useEffect(() => {
+    //     //console.log("useeffect is running...")
+    //     fetch('api/blogsdir').then((a) => {
+    //         return a.json()
+    //     })
+    //         .then((parsed) => {
+    //             // console.log(parsed)
+    //             setBlogs(parsed)
+    //         })
+    // },[])
 
     return (
         <>
@@ -39,5 +39,13 @@ const Blog = () => {
         </>
     )
 }
-
+export async function getServerSideProps(context) {
+    
+    // Fetch data from external API
+    const res = await fetch(`http://localhost:3000/api/blogsdir`)
+    const data = await res.json()
+//   console.log(data); //for debugging
+    // Pass data to the page via props
+    return { props: { data } }
+  }
 export default Blog
