@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    
+    /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&family=Ubuntu:ital@1&display=swap'); */
+    @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital,wght@1,300&family=Ubuntu:ital@1&display=swap');
+    .container{
+      border: 3px solid rgb(192, 192, 192);
+      width: 40vw;
+      margin: auto;
+      border-radius: 9px;
+      background-color: #fafafa;
+      box-shadow: 5px 10px #e8e8e89e;
+    }
+    .container h1{
+      font-weight: bold !important;
+      text-align: center;
+    }
+    form{
+      flex-direction: column;
+    display: flex;
+    }
+    .mb-3{
+      margin: 25px;
+      display: flex;
+      justify-content:space-between ;
+      align-items: center;
+      width: 80%;
+    }
+    .form-control{
+      width: 20vw;
+      height: 50px;
+      font-size: 25px;
+      border-radius: 4px;
+     
+    }
+    .form-control2{
+      width: 20vw;
+      
+      font-size: 25px;
+      border-radius: 4px;
+    }
+    .form-label{
+      font-size: 30px;
+      margin: 23px;
+      font-size: bold;
+      /* font-family: 'roboto',sans-serif; */
+      font-family: 'Lato', sans-serif;
+
+    }
+    .btn{
+      height: 60px;
+      width: 150px;
+      margin: auto;
+      border: 1px solid white;
+      color: white;
+      font-size: 23px;
+      border-radius: 10px;
+      background-color: #0d6efd;
+      margin-bottom: 20px;
+      
+font-family: 'Ubuntu', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Contact Us</h1>
+    <div class="mainform">
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name : </label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address : </label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Phone Number :</label>
+          <input type="text" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Description :</label>
+          <textarea class="form-control2" id="exampleFormControlTextarea1" rows="5"></textarea>
+        </div>
+        
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
