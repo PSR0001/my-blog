@@ -8,7 +8,7 @@ const slug = (props) => {
   const [blog,setblog] = useState(props.data);
 
   // const router = useRouter();
-
+ 
   //  useEffect(()=>{
 
   //   if(!router.isReady) return;
@@ -30,12 +30,11 @@ const slug = (props) => {
       <hr/>
 
       <p>{blog.content}</p>
-
-
-
     </div>
   )
 }
+
+//server side rendaring
 export async function getServerSideProps(context) {
   // Fetch data from external API
   const {slug}  = context.query;
