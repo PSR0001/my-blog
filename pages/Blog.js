@@ -25,7 +25,7 @@ const Blog = () => {
                     <div className={styles.grid}>    
                         {Blogs.map((blogItems) => {
                             return <div className={styles.card} key={blogItems.slug}>
-                                <Link href={`/Blogpost/${blogItems.slug}}`}><h2>{blogItems.title} &rarr;</h2></Link>
+                                <Link href={`/Blogpost/${blogItems.slug}`}><h2>{blogItems.title} &rarr;</h2></Link>
                                 <p>{blogItems.content.substr(0,60)}...</p>
                             </div>
                         })}

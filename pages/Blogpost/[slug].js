@@ -1,17 +1,35 @@
 import { useRouter } from 'next/router'
 import styles from '../../styles/Blogpost.module.css'
 import React from 'react'
+import { useState,useEffect } from 'react'
 
 const slug = () => {
-    const router = useRouter();
-    const {slug} = router.query;
+
+  const [blog,setblog] = useState([]);
+
+  const router = useRouter();
+
+   useEffect(()=>{
+
+    if(!router.isReady) return;
+    const {slug}  = router.query;
+    // console.log("i am in react ...")
+    console.log(slug);
+    fetch(`/api/blogs?slug=${slug}`).then((a) => {
+      return a.json()
+    }).then((parsed) => {
+      // console.log(parsed)
+      setblog(parsed)
+    })
+
+   },[router.isReady]) //**
+  
   return (
     <div className={styles.container}>
-      <h2>Title : {slug}</h2>
+      <h2>Title : {blog.title}</h2>
       <hr/>
-      <p>
-      JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. Over 97% of websites use JavaScript on the client side for web page behavior, often incorporating third-party libraries.
-      </p>
+
+      <p>{blog.content}</p>
 
 
 
