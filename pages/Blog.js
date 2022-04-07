@@ -26,7 +26,7 @@ const Blog = (props) => {
                         {Blogs.map((blogItems) => {
                             return <div className={styles.card} key={blogItems.slug}>
                                 <Link href={`/Blogpost/${blogItems.slug}`}><h2>{blogItems.title} &rarr;</h2></Link>
-                                <p>{blogItems.content.substr(0,60)}...</p>
+                                <p>{blogItems.metadata.substr(0,60)}...</p>
                             </div>
                         })}
                        
@@ -40,7 +40,7 @@ const Blog = (props) => {
     )
 }
 export async function getServerSideProps(context) {
-    
+
     // Fetch data from external API
     const res = await fetch(`http://localhost:3000/api/blogsdir`)
     const data = await res.json()

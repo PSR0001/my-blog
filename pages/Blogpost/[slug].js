@@ -6,7 +6,7 @@ import { useState,useEffect } from 'react'
 const slug = (props) => {
 
   const [blog,setblog] = useState(props.data);
-
+ 
   // const router = useRouter();
  
   //  useEffect(()=>{
@@ -29,9 +29,13 @@ const slug = (props) => {
       <h2>Title : {blog.title}</h2>
       <hr/>
 
-      <p>{blog.content}</p>
+      {blog && <div dangerouslySetInnerHTML={createMarkup(blog.content)}></div>}
     </div>
   )
+}
+
+function createMarkup(c) {
+  return {__html: c};
 }
 
 //server side rendaring
