@@ -29,11 +29,11 @@
 }
 
 .title a {
-  color: #0070f3;
+  color: #22c460;
   text-decoration: none;
 }
 .title a {
-  color: #0070f3;
+  color: #22c460;
   text-decoration: none;
 }
 
@@ -92,8 +92,8 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: #22c460;
+  border-color: #22c460;
 }
 
 .card h2 {
@@ -120,7 +120,7 @@
 }
 
 .strong2{
-  color: #0070f3;
+  color: #22c460;
 }
 .navbar{
   /* font-size: 25px; */

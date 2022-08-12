@@ -36,5 +36,5 @@ yarn-error.log*
 
 
 /contactdata
-/blogdata
+/blogdata/.json
 
