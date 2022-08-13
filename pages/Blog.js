@@ -3,25 +3,11 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Footer from '../components/Footer'
 import styles from '../styles/Home.module.css'
-// import { useEffect } from 'react/cjs/react.development'
-// import { useState } from 'react/cjs/react.production.min'
+
 const Blog = (props) => {
 
     const [Blogs, setBlogs] = useState(props.data)
-    // useEffect(() => {
-    //     //console.log("useeffect is running...")
-    //     fetch('api/blogsdir').then((a) => {
-    //         return a.json()
-    //     })
-    //         .then((parsed) => {
-    //             // console.log(parsed)
-    //             setBlogs(parsed)
-    //         })
-    // },[])
-
-
-
-
+    
     return (
         <>
             <div className="container px-7  mx-auto">
