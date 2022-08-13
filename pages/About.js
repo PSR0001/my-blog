@@ -1,6 +1,5 @@
 import React from 'react'
 import Footer from '../components/Footer'
-
 import styles from '../styles/Home.module.css'
 const About = () => {
   return (
@@ -12,11 +11,10 @@ const About = () => {
             <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table.</p>
           </div>
           <div className="flex flex-wrap -m-4">
-
-          <div  className="xl:w-1/3 md:w-1/2 p-4 ">
+            <div className="xl:w-1/3 md:w-1/2 p-4 ">
               <div className="border border-gray-200 p-6 rounded-lg transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-100  duration-300 hover:shadow-md">
                 <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 mb-4">
-                <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-6 h-6" viewBox="0 0 24 24">
+                  <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-6 h-6" viewBox="0 0 24 24">
                     <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                   </svg>
                 </div>
@@ -24,7 +22,6 @@ const About = () => {
                 <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
               </div>
             </div>
-
             <div className="xl:w-1/3 md:w-1/2 p-4">
               <div className="border border-gray-200 p-6 rounded-lg transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-100  duration-300 hover:shadow-md">
                 <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 mb-4">
@@ -38,7 +35,6 @@ const About = () => {
                 <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
               </div>
             </div>
-
             <div className="xl:w-1/3 md:w-1/2 p-4">
               <div className="border border-gray-200 p-6 rounded-lg transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-100  duration-300 hover:shadow-md">
                 <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 mb-4">
@@ -51,7 +47,6 @@ const About = () => {
                 <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
               </div>
             </div>
-
             <div className="xl:w-1/3 md:w-1/2 p-4">
               <div className="border border-gray-200 p-6 rounded-lg transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-100  duration-300 hover:shadow-md">
                 <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 mb-4">
@@ -63,7 +58,6 @@ const About = () => {
                 <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
               </div>
             </div>
-
             <div className="xl:w-1/3 md:w-1/2 p-4">
               <div className="border border-gray-200 p-6 rounded-lg transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-100  duration-300 hover:shadow-md">
                 <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 mb-4">
@@ -75,7 +69,6 @@ const About = () => {
                 <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
               </div>
             </div>
-
             <div className="xl:w-1/3 md:w-1/2 p-4">
               <div className="border border-gray-200 p-6 rounded-lg transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-100  duration-300 hover:shadow-md">
                 <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 mb-4">
@@ -91,7 +84,6 @@ const About = () => {
           <button className="flex mx-auto mt-16 text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg">More info </button>
         </div>
       </section>
-
       <footer className={styles.footer}>
         Powered by{' '}
         <span className={styles.logo}>
