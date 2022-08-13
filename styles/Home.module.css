@@ -127,6 +127,9 @@
  font-weight: bold;
   /* margin: auto; */
   background-color: white;
+  position: sticky;
+  top:1px;
+  
 }
 
 .navbar ul{
@@ -139,4 +142,12 @@
   margin:20px;
   text-decoration: none;
   list-style: none;
+  /* color: #22c460; */
 }
+.navbar li:hover{
+  color: #22c460;
+  /* transform: translate3d(5); */
+  
+}
+
+

@@ -22,11 +22,9 @@ const particlesLoaded = useCallback(async (container) => {
     <Particles
             id="tsparticles"
             init={particlesInit}
-            loaded={particlesLoaded}
-            className="w-1/3"
+            loaded={particlesLoaded}         
             options={{
                 background: {
-                  
                     color: {
                         value: "",
                     },
