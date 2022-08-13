@@ -6,8 +6,8 @@ import styles from '../styles/Home.module.css'
 
 const Blog = (props) => {
 
-    const [Blogs, setBlogs] = useState(props.data)
-    
+    const [blogs, setBlogs] = useState(props.data)
+    console.log(blogs);
     return (
         <>
             <div className="container px-7  mx-auto">
@@ -24,7 +24,7 @@ const Blog = (props) => {
                 </div>
 
                 <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-                    {Blogs.map((blogItems, key) => {
+                    {blogs.Blog.map((blogItems, key) => {
                         return (<div key={key} className="p-4 md:w-1/3 sm:mb-0 mb-6">
                             <div className="rounded-lg h-64 overflow-hidden">
                                 <img alt="content" className="hover-img object-cover object-center h-full w-full" src="https://images.pexels.com/photos/2014422/pexels-photo-2014422.jpeg?auto=compress&cs=tinysrgb&h=350" />
@@ -85,9 +85,9 @@ export async function getServerSideProps(context) {
 
     
     // Fetch data from external API
-    const response = await fetch(`http://localhost:3000/api/blogsdir`)
+    const response = await fetch(`http://localhost:3000/api/getblogs`)
     const data = await response.json()
-
+// console.log(data);
     return { props: { data } }
 }
 export default Blog
