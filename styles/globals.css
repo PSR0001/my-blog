@@ -40,3 +40,15 @@ body::-webkit-scrollbar-track {
   background-image: linear-gradient(#4ade80, #22b55a);
   border-radius: 20px;
 }
+
+/* image  */
+.hover-img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: 1s ease-in-out;
+}
+.hover-img:hover {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
