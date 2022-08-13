@@ -4,14 +4,15 @@ import Link from 'next/link'
 import Category from '../components/Home/Category'
 import Features from '../components/Home/Features'
 import Footer from '../components/Footer'
-// import Particle from '../components/Particle'
+import Particle from '../components/Particle'
 import Main from '../components/Main'
+import Rain from '../components/Rain'
 
 
 export default function Home() {
 
   return (
-    <div className={styles.container}>
+    <div >
 
       <Head>
         <title>My Blog</title>
@@ -20,9 +21,9 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+       <Rain/>
         <Main />
-       
-        {/* <div className='w-{500}'>
+        {/* <div >
           <Particle />
         </div> */}
       </main>

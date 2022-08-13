@@ -4,7 +4,8 @@ import Link from 'next/link'
 
 const Main = () => {
     return (
-        <div>
+        <div >
+
             <h1
             data-aos="zoom-in-up"
             data-aos-offset="500"
@@ -51,9 +52,7 @@ const Main = () => {
                 className={styles.card} >
                     <Link href={"/Blog"} ><h2>More &rarr;</h2></Link>
                     <p>Learn about Next.js in an interactive course with quizzes!</p>
-
                 </div>
-
             </div>
         </div>
     )

@@ -3,11 +3,6 @@ import Footer from '../components/Footer'
 
 import styles from '../styles/Home.module.css'
 const About = () => {
-
-
-
-
-
   return (
     <div>
       <section className="text-gray-600 body-font mx-1 lg:mx-14">
@@ -93,7 +88,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <button className="flex mx-auto mt-16 text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg">Button</button>
+          <button className="flex mx-auto mt-16 text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg">More info </button>
         </div>
       </section>
 

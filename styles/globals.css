@@ -52,3 +52,25 @@ body::-webkit-scrollbar-track {
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
 }
+
+
+/* rain class
+ */
+ 
+ i{
+  position: absolute;
+  height: 6px;
+  width: 6px;
+  background: linear-gradient(transparent,#22b55a);
+  animation: animate 10s linear infinite;
+  border-radius: 50%;
+ }
+
+@keyframes animate {
+  0%{
+    transform: translateY(600px);
+  }
+  100%{
+    transform: translateY(clac(100vh))
+  }
+}
