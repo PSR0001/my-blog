@@ -26,7 +26,7 @@ const slug = (props) => {
         <div className="flex flex-wrap w-full bg-blend-darken bg-gray-100 py-36  relative mb-4">
           <img alt="gallery" className=" realtive  w-full object-cover h-full object-center block  absolute inset-0" src={imgUrl}/>
           <div className="text-center relative z-10 w-full">
-            <h2 className="text-5xl  font-medium title-font mb-2">Title : {blog.title}</h2>
+            <h2 className="text-5xl  font-medium title-font mb-2">Title : {blog.Blog.title}</h2>
             <p className="leading-relaxed">Skateboard +1 mustache fixie paleo lumbersexual.</p>
           
           </div>
@@ -35,8 +35,8 @@ const slug = (props) => {
         <div className="lg:w-[900px] mx-auto text-gray-600 body-font  bg-slate-200">
           <div className="container mx-auto flex px-5 py-16 items-center justify-center flex-col">
             <div className="text-center lg:w-2/3 w-full">
-              <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 shadow-sm">Title : {blog.title}</h1>
-              <p className="mb-8 leading-relaxed">{blog && <div dangerouslySetInnerHTML={createMarkup(blog.content)}></div>}</p>
+              <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 shadow-sm">Title : {blog.Blog.title}</h1>
+              <p className="mb-8 leading-relaxed">{blog && <div dangerouslySetInnerHTML={createMarkup(blog.Blog.content)}></div>}</p>
             </div>
           </div>
         </div>
@@ -59,9 +59,10 @@ export async function getServerSideProps(context) {
   // Fetch data from external API
   const { slug } = context.query;
   // console.log(context.req.url);
-  const res = await fetch(`http://localhost:3000/api/blogs?slug=${slug}`)
+  const res = await fetch(`http://localhost:3000/api/getblog?slug=${slug}`)
   const data = await res.json()
 
+  
   // Pass data to the page via props
   return { props: { data } }
 }
