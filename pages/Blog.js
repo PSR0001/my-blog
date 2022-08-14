@@ -7,7 +7,7 @@ import styles from '../styles/Home.module.css'
 const Blog = (props) => {
 
     const [blogs, setBlogs] = useState(props.data)
-    console.log(blogs);
+    // console.log(blogs);
     return (
         <>
             <div className="container px-7  mx-auto">

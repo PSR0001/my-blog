@@ -1,21 +1,12 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
+import { useState} from 'react'
+import Image from 'next/image';
 
 const slug = (props) => {
 
   const [blog, setblog] = useState(props.data);
   const [num,serNum]=useState( Math.floor(Math.random() * (5 + 1)))
 
-  let image=[
-    "https://images.pexels.com/photos/574077/pexels-photo-574077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-     "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-     "https://images.unsplash.com/photo-1586348943529-beaae6c28db9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=415&q=80",
-     "https://cdn.pixabay.com/photo/2015/08/24/12/53/banner-904884_960_720.jpg",
-     "https://images.unsplash.com/photo-1604537466158-719b1972feb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80",
-     "https://images.unsplash.com/photo-1444464666168-49d633b86797?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
-
-  ]
- let imgUrl = image[num];
 // console.log(number)
 
   return (
@@ -23,13 +14,15 @@ const slug = (props) => {
       
       <div className="w-full mx-auto text-white">
 
-        <div className="flex flex-wrap w-full bg-blend-darken bg-gray-100 py-36  relative mb-4">
-          <img alt="gallery" className=" realtive  w-full object-cover h-full object-center block  absolute inset-0" src={imgUrl}/>
-          <div className="text-center relative z-10 w-full">
+        <div className="flex flex-wrap w-full bg-blend-darken bg-gray-100  relative mb-4">
+          {/* <img alt="gallery" className=" realtive  w-full object-cover h-full object-center block  absolute inset-0" src={imgUrl}/> */}
+          <Image alt="gallery" className="  w-full object-cover h-full object-center block   inset-0" src={`/show/${num}.jpg`} height={370} width={1520}></Image>
+          {/* <div className="text-center relative z-10 w-full">
             <h2 className="text-5xl  font-medium title-font mb-2">Title : {blog.Blog.title}</h2>
             <p className="leading-relaxed">Skateboard +1 mustache fixie paleo lumbersexual.</p>
           
-          </div>
+          </div> */}
+          
         </div>
 
         <div className="lg:w-[900px] mx-auto text-gray-600 body-font  bg-slate-200">
