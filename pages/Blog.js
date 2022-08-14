@@ -7,7 +7,7 @@ import styles from '../styles/Home.module.css'
 const Blog = (props) => {
 
     const [blogs, setBlogs] = useState(props.data)
-    // console.log(blogs);
+   
     return (
         <>
             <div className="container px-7  mx-auto">
@@ -27,7 +27,7 @@ const Blog = (props) => {
                     {blogs.Blog.map((blogItems, key) => {
                         return (<div key={key} className="p-4 md:w-1/3 sm:mb-0 mb-6">
                             <div className="rounded-lg h-64 overflow-hidden">
-                                <img alt="content" className="hover-img object-cover object-center h-full w-full" src="https://images.pexels.com/photos/2014422/pexels-photo-2014422.jpeg?auto=compress&cs=tinysrgb&h=350" />
+                                <img alt="content" className="hover-img object-cover object-center h-full w-full" src={blogItems.img} />
                             </div>
                             <h2 className="text-xl font-medium title-font text-gray-900 mt-5">{blogItems.title}</h2>
                             <p className="text-base leading-relaxed mt-2">   {blogItems.metadata.substr(0, 80)}...</p>
