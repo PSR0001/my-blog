@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import Footer from '../components/Footer'
@@ -18,7 +18,7 @@ const Blog = (props) => {
                     <div className="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
                         <h1 className="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">All Blogs Reserved</h1>
                         <p className="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">
-                            Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.
+                            Welcome to myblog. know your favarite field through this. thank you for visiting. to read the click learn more. 
                         </p>
                     </div>
                 </div>
